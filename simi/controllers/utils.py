@@ -117,6 +117,9 @@ class AlbumDirectory:
 	def get_album_url(self):
 		return "view_album?dir=%s"%self.get_url_name()
 
+	def get_album_feed_url(self):
+		return "feed?dir=%s"%self.get_url_name()
+
 	def get_thumb_name(self):
 		return g.path_re.sub("", self.dirname)
 

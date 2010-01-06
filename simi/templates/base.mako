@@ -1,13 +1,19 @@
 # -*- coding: utf-8 -*-
+<html>
+ <head>
+	<title>Simipics - ${c.title}</title>
+	<meta name="viewport" content="width=480;" />
+	${h.stylesheet_link_tag("styles")}
+	${self.rss_links()}
+ </head>
 
-<meta name="viewport" content="width=480;" />
-
-
+<%def name="rss_links()">
+</%def>
 <%def name="album_nav()">
 </%def>
 
-${h.stylesheet_link_tag("styles")}
-<title>${c.title}</title>
+
+
 
 <h1>${c.title}
 % if c.subtitle:
@@ -43,3 +49,4 @@ ${self.album_nav()}
 	</%def>
 </div>
 
+</html>
