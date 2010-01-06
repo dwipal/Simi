@@ -16,6 +16,8 @@ from PIL import Image
 
 from simi.lib.app_globals import *
 from simi.lib import EXIF
+from pylons import request
+
 
 g=Globals()
 
@@ -118,7 +120,7 @@ class AlbumDirectory:
 		return "view_album?dir=%s"%self.get_url_name()
 
 	def get_album_feed_url(self):
-		return "feed?dir=%s"%self.get_url_name()
+		return "%s/feed?dir=%s"%(request.host_url, self.get_url_name())
 
 	def get_thumb_name(self):
 		return g.path_re.sub("", self.dirname)
