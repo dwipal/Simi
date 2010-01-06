@@ -1,7 +1,7 @@
 SetHandler python-program
 PythonHandler simi_mod_python
-PythonOption paste.ini /mnt/wwwroot/simi/deployment.ini
-PythonPath "[ '/mnt/wwwroot/simi' ] + sys.path"
+PythonOption paste.ini /home/albumglue/dev/simi/deployment.ini
+PythonPath "[ '/home/albumglue/dev/simi' ] + sys.path"
 
 
 RewriteEngine On
