@@ -1,0 +1,14 @@
+SetHandler python-program
+PythonHandler simi_mod_python
+PythonOption paste.ini /mnt/wwwroot/simi/deployment.ini
+PythonPath "[ '/mnt/wwwroot/simi' ] + sys.path"
+
+
+RewriteEngine On
+
+RewriteRule (.*)\--(.*)\.css $1\.css [L] 
+RewriteRule (.*)\--(.*)\.js  $1\.js [L]
+
+RewriteRule (.*)dispatch\.fcgi/(.*)  http://simipic.dyndns.org/$2 [L]
+
+

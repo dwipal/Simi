@@ -1,0 +1,11 @@
+*.pyc
+*.swp
+data/*
+None/*
+test.ini
+config_merged.ini
+current_branch.ini
+run_mode_prod
+.amateras
+.project
+.settings/*

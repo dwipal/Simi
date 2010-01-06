@@ -1,0 +1,98 @@
+body {
+	background-color:#111;
+	color:#fff;
+}
+
+.albumdata{
+	width:100%;
+	#background-color:#eee;
+	float:left;
+	clear: both;
+
+}
+
+.albumdetails{
+	width:100%;
+	float:left;
+
+
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+.imageview{
+	float:center;
+	text-align:center;
+	clear: both;
+	background-color:#333;
+}
+
+.imageSingle {
+	width:80px; 
+	height:60px; 
+	margin:4px;
+	overflow:hidden;
+
+	border:1px solid;
+	border-color:#666;
+
+	float:left;
+	text-align:center;
+}
+
+.imagenav {
+	padding-top:5px;
+	padding-bottom:5px;
+	background-color:#222;
+}
+
+img {
+	border: 1px solid;
+	border-color: #666;
+}
+
+a img{
+	border:0;
+} 
+
+a {
+	color:#0ee;
+}
+
+a:visited {
+	color:#eee;
+}
+
+
+h1 {
+	font-family:arial;
+	font-size: 1em;
+}
+
+
+
+
+.error{
+	border: 1px solid;
+	border-color: #f00;
+	margin-bottom: 8px;
+	margin-top: 8px;
+	padding-left: 5px;
+	color: #f00;
+}
+
+
+
+@media only screen and (max-device-width: 480px) {
+	body {
+		width: 480px;
+	}
+
+	.imageview {
+		width: auto;
+		height: 100%;
+ 
+	}
+
+}
+

@@ -1,0 +1,14 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+TestAlbumsController	test_albums.py	/^class TestAlbumsController(TestController):$/;"	c
+TestPicturesController	test_pictures.py	/^class TestPicturesController(TestController):$/;"	c
+TestViewAlbumController	test_view_album.py	/^class TestViewAlbumController(TestController):$/;"	c
+TestViewPhotoController	test_view_photo.py	/^class TestViewPhotoController(TestController):$/;"	c
+test_index	test_albums.py	/^    def test_index(self):$/;"	m	class:TestAlbumsController
+test_index	test_pictures.py	/^    def test_index(self):$/;"	m	class:TestPicturesController
+test_index	test_view_album.py	/^    def test_index(self):$/;"	m	class:TestViewAlbumController
+test_index	test_view_photo.py	/^    def test_index(self):$/;"	m	class:TestViewPhotoController
