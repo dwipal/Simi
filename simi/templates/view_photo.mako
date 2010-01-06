@@ -86,3 +86,6 @@ ${exif.print_exif()}
 </%def>
 
 
+<%def name="rss_links()">
+	<link rel="alternate"	type="application/rss+xml" title="${c.title}" href="${c.albumdir.get_album_feed_url()}">
+</%def>

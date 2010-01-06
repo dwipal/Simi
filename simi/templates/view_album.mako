@@ -2,7 +2,6 @@
 
 
 <%inherit file="/base.mako" />
-<link rel="alternate"	type="application/rss+xml" title="simipic: ${c.title}" href="${c.albumdir.get_album_feed_url()}">
 
 <div class="imageview">	
 	% for p in c.pics:
@@ -40,5 +39,5 @@
 </%def>
 
 <%def name="rss_links()">
-	<link rel="alternate"	type="application/rss+xml" title="Flickr: Your Photostream RSS feed" href="http://api.flickr.com/services/feeds/photos_public.gne?id=54183610@N00&amp;lang=en-us&amp;format=rss_200">
+	<link rel="alternate"	type="application/rss+xml" title="${c.title}" href="${c.albumdir.get_album_feed_url()}">
 </%def>
