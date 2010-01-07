@@ -59,13 +59,6 @@ ${exif.print_exif()}
 <script type="text/javascript">
 	var hasScrolled=false;
 	
-	function scrollHandler(e) {
-		self.hasScrolled = true;
-	}
-	document.onkeypress=keyHandler;
-	document.onscroll=scrollHandler;
-
-
 
 	$(window).load(function() {
 		$(document).keydown(function(e) {
@@ -79,6 +72,10 @@ ${exif.print_exif()}
 					parent.location="${c.albumdir.get_album_url()}";
 				}
 			}
+		});
+
+		$(document).scroll(function(e) {
+			self.hasScrolled = true;
 		});
 	}
 	);
