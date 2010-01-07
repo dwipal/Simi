@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=480;" />
 	${h.stylesheet_link_tag("styles")}
 	${self.rss_links()}
+	<script type="text/javascript" src="/js/jquery-1.3.2.min.js"></script>
+
  </head>
 
 <%def name="rss_links()">
