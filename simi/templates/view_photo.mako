@@ -58,26 +58,33 @@ ${exif.print_exif()}
 
 <script type="text/javascript">
 	var hasScrolled=false;
-	function keyHandler(e) {
-		if (e.keyCode == 37) {
-			// left
-			parent.location="${p_prev.get_preview_url()}";
-		} else if (e.keyCode == 39) {
-			// right
-			parent.location="${p_next.get_preview_url()}";
-		} else if (e.keyCode == 38) {
-			// up (goes back to album)
-			if(hasScrolled==false) {
-				parent.location="${c.albumdir.get_album_url()}";
-			}
-		}
-	}
 	
 	function scrollHandler(e) {
 		self.hasScrolled = true;
 	}
 	document.onkeypress=keyHandler;
 	document.onscroll=scrollHandler;
+
+
+
+	$(window).load(function() {
+		$(document).keydown(function(e) {
+			if(e.which == 37) {
+				parent.location="${p_prev.get_preview_url()}";
+			} else if(e.which == 39) {
+				parent.location="${p_next.get_preview_url()}";
+
+			} else if(e.which == 38) {
+				if(hasScrolled==false) {
+					parent.location="${c.albumdir.get_album_url()}";
+				}
+			}
+		});
+	}
+	);
+
+
+
 </script>
 
 <%def name="album_nav()">
