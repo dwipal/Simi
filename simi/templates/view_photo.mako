@@ -24,7 +24,7 @@ p_next=c.albumcontext.get_images()[i_next]
 </div>
 
 
-<div class="imageview">
+<div class="imageview" style="height: 600px;">
 	<a href="${p_next.get_preview_url()}">
 		<img src="${c.pic.get_image_url()}"></img>
 	</a>
